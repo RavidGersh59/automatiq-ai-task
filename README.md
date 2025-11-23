@@ -22,14 +22,15 @@ In the **root directory** (same folder as `docker-compose.yml`) create:
 ---
 
 ## 2. Start the system
-```bash
 docker compose up --build
 
+---
 
-## **3. open UI**
+## 3. open UI
 Once Docker is running:
 Open the UI in your browser:
-👉 http://localhost:3000
+
+http://localhost:3000
 
 The frontend automatically connects to the backend container on port 8000.
 

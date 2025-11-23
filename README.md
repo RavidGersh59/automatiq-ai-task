@@ -1,5 +1,4 @@
 Employee Training Assistant  
-Full-Stack Assignment (FastAPI + React + GPT-4o)  
 
 This project implements an end-to-end employee training assistant with:  
 - Authentication flow  

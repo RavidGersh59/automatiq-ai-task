@@ -33,3 +33,13 @@ http://localhost:3000
 
 The frontend automatically connects to the backend container on port 8000.
 
+---
+
+## UI Notes
+
+The chat includes a Send button, and you can also press Enter to send messages.
+
+A Reset button is available to fully clear the conversation and start a new session.
+
+After successful authentication, a “Connected” indicator appears at the bottom of the screen to confirm successful login.
+

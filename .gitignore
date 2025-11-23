@@ -1,0 +1,25 @@
+ECHO is on.
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache/
+
+# OS
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Docker
+*.log
+

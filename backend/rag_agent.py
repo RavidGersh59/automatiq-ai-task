@@ -170,7 +170,7 @@ def run_rag_agent(user_info, user_message, conversation ):
     
     elif system_reply["TARGET"][0] == 'OTHER' and user_info["division"] != 'CISO': # regular employee asks about someone else
         if contains_hebrew(user_message):
-            system_reply = "מותר לך לשאול רק על המידע שקשור אלי. בבקשה תנסח את השאלה מחדש."
+            system_reply = "מותר לך לשאול רק על המידע שקשור לגביך. בבקשה תנסח את השאלה מחדש."
         else:
             system_reply = "You are allowed to ask only about your own data. Please rephrase your question."
         conversation.append({"role": "assistant", "content": system_reply})

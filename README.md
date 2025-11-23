@@ -1,4 +1,4 @@
-Employee Training Assistant  
+## Employee Training Assistant  
 
 This project implements an end-to-end employee training assistant with:  
 - Authentication flow  

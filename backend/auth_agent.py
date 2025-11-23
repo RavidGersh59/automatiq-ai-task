@@ -93,7 +93,7 @@ def run_auth_agent(user_message, user_info, system_last_message ):
 
     elif user_info['id'] == None:
         if contains_hebrew(user_message):
-            system_last_message = f"  אני צריך גם את מספר הזהות שלך{user_info['name']} "
+            system_last_message = f"  אני צריך גם את מספר הזהות שלך ,{user_info['name']} "
         else:    
             system_last_message = f"Hey {user_info['name']}, I must get your ID also"
         

@@ -16,7 +16,6 @@ Both services are fully containerized and orchestrated via **docker-compose**.
 In the **root directory** (same folder as `docker-compose.yml`) create:
 
 > The repository includes `.env.example` to show which variables are required.  
-> Do **NOT** commit `.env` — it contains secrets.
 
 ---
 

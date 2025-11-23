@@ -1,7 +1,7 @@
 import sqlite3
 from openai import OpenAI
 import ast
-from db_functions import get_column_names, is_query_safe, search, contains_hebrew
+from db_functions import get_column_names, search, contains_hebrew
 from dotenv import load_dotenv
 import os
 from pathlib import Path
@@ -159,7 +159,7 @@ def run_rag_agent(user_info, user_message, conversation ):
 
     
     # if "ERROR" in system_reply:
-    if system_reply["ERROR"][0] == 'FORBIDDEN' or (is_query_safe(system_reply['SQL'])) == False: # the user asks illegal action that will change the database
+    if system_reply["ERROR"][0] == 'FORBIDDEN' : # the user asks illegal action that will change the database
         if contains_hebrew(user_message):
             system_reply = "אני לא יכול לבצע שינויים במסד הנתונים, בבקשה תנסח את השאלה מחדש."
         else:    

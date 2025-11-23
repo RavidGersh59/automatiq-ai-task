@@ -56,19 +56,6 @@ def get_column_names():
 
 
 
-
-def is_query_safe(query: str) -> bool: # TODO CHECK IF IT IS RELEVANT
-    FORBIDDEN_KEYWORDS = [
-    "DELETE", "DROP", "UPDATE", "INSERT", "ALTER"
-    ] # check if there is no intention to make changes in the data
-
-    q_upper = query.upper()
-    if not q_upper.strip().startswith("SELECT"): # only select queries are allowed - no changes
-        return False
-    return not any(word in q_upper for word in FORBIDDEN_KEYWORDS)
-
-
-
 def search(query: str, db_path="employees.db"):
     """
     Executes an SQL query on the given SQLite database and returns the results.
